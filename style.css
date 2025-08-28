@@ -1,58 +1,65 @@
-/* Estilos para la Página de Habitaciones */
-.page-header {
-    background-color: var(--bg-color-light);
-    padding: 60px 0;
-    text-align: center;
-}
-
-.page-header p {
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.rooms-grid {
+/* Estilos para la Página de Detalle de Habitación */
+.room-detail {
     padding: 60px 0;
 }
 
-.rooms-grid .container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
+.room-content-wrapper {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    align-items: flex-start;
 }
 
-.room-card {
-    display: block;
-    text-decoration: none;
-    color: var(--text-color);
-    border: 1px solid var(--border-color);
-    border-radius: 8px;
-    overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+.room-images {
+    flex: 1;
+    min-width: 300px;
 }
 
-.room-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-}
-
-.room-card img {
+.main-room-image {
     width: 100%;
-    height: 200px;
-    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 
-.room-info {
-    padding: 20px;
-    text-align: left;
+.room-info-section {
+    flex: 1;
+    min-width: 300px;
 }
 
-.room-info h3 {
-    margin: 0 0 5px;
+.room-description {
+    line-height: 1.8;
 }
 
-.room-details {
-    display: inline-block;
-    margin-top: 10px;
-    color: var(--primary-color);
+.room-features p {
+    margin: 5px 0;
+}
+
+.booking-section {
+    background-color: var(--bg-color-light);
+    padding: 40px;
+    border-radius: 8px;
+    margin-top: 40px;
+}
+
+.booking-form .form-group {
+    margin-bottom: 20px;
+}
+
+.booking-form label {
+    display: block;
+    margin-bottom: 8px;
     font-weight: 700;
+}
+
+.booking-form input, .booking-form select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+.booking-form .cta-button {
+    width: 100%;
+    text-align: center;
 }
