@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habitación 101 | Hostal HDQ en Concepción</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">Hostal HDQ</a>
+            <nav class="nav-menu">
+                <a href="habitaciones.html" class="active">Habitaciones</a>
+                <a href="galeria.html">Galería</a>
+                <a href="contacto.html">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="room-detail">
+            <div class="container">
+                <div class="room-content-wrapper">
+                    <div class="room-images">
+                        <img src="URL_IMAGEN_PRINCIPAL_101" alt="Habitación 101 Hostal HDQ" class="main-room-image">
+                    </div>
+                    <div class="room-info-section">
+                        <h1>Habitación 101</h1>
+                        <p class="room-description">Ideal para viajes en pareja o con amigos. Esta habitación te ofrece el espacio y la privacidad para descansar después de un día de exploración en Concepción.</p>
+
+                        <div class="room-features">
+                            <p><strong>Capacidad:</strong> 2 personas</p>
+                            <p><strong>Camas:</strong> 2 camas individuales</p>
+                            <p><strong>Comodidades:</strong> Baño privado</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="booking-section">
+                    <h2>Reserva esta habitación ahora</h2>
+                    <form action="#" class="booking-form">
+                        <div class="form-group">
+                            <label for="personas">Número de personas</label>
+                            <select id="personas" name="personas">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="llegada">Fecha de llegada</label>
+                            <input type="date" id="llegada" name="llegada" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="salida">Fecha de salida</label>
+                            <input type="date" id="salida" name="salida" required>
+                        </div>
+                        <button type="submit" class="cta-button">Reservar Ahora</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Hostal HDQ. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
